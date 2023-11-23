@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 300px;
+  min-height: 100dvh;
+  color: #252733;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding: 72px 24px;
+}
+
+header {
+  background-color: rgba(246, 246, 251, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 3px 0 #21252B;
+  padding: 12px 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  max-width: 100px;
+  height: max-content;
+}
+header .logo img {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  gap: 24px;
+}
+header nav ul li {
+  font-weight: 500;
+}
+header nav ul li:hover {
+  color: black;
+  border-bottom: 1px solid #21252B;
+}
+
+section#hero {
+  min-height: calc(100dvh - 50px);
+  color: #D5D7DB;
+  background: linear-gradient(rgba(33, 37, 43, 0.75), rgba(33, 37, 43, 0.75)), url(../../assets/hero-background.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section#hero h1 {
+  font-size: 75px;
+}
+section#hero p {
+  font-size: 20px;
+  margin-block: 24px;
+}
+section#hero button.services-CTA-btn {
+  background-color: #F6F6FB;
+  color: #252733;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

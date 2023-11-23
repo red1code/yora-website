@@ -1,0 +1,55 @@
+$bg-light: #F6F6FB;
+$bg-dark: #21252B;
+$txt-light-1: #D5D7DB;
+$txt-light-2: #cccccc;
+$txt-dark: #252733;
+$green: #19B03F;
+$dark_green: #097624;
+$green-2: #56F09F;
+$gap: 24px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 300px;
+  min-height: 100dvh;
+  color: $txt-dark;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-weight: 600;
+  padding: calc($gap / 2) calc($gap);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+img {
+  max-width: 100%;
+}

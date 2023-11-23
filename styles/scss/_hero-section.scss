@@ -1,0 +1,28 @@
+section#hero {
+  min-height: calc(100dvh - 50px);
+  color: $txt-light-1;
+  background: linear-gradient(rgba($bg-dark, 0.75), rgba($bg-dark, 0.75)),
+    url(../../assets/hero-background.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 75px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-block: $gap;
+  }
+
+  button.services-CTA-btn {
+    background-color: $bg-light;
+    color: $txt-dark;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+}

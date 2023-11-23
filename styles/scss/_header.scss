@@ -1,0 +1,36 @@
+header {
+  background-color: rgba($bg-light, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 3px 0 $bg-dark;
+  padding: calc($gap / 2) $gap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  .logo {
+    max-width: 100px;
+    height: max-content;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: $gap;
+
+      li {
+        font-weight: 500;
+      }
+
+      li:hover {
+        color: black;
+        border-bottom: 1px solid $bg-dark;
+      }
+    }
+  }
+}
