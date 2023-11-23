@@ -1,0 +1,7 @@
+body {
+  min-height: 100dvh;
+  background-image: url(../assets/coming-soon.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
