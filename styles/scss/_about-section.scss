@@ -1,0 +1,24 @@
+section#about {
+  .inside-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc($gap * 2);
+    flex-wrap: wrap;
+
+    &>div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h2 {
+      margin-bottom: $gap;
+    }
+
+    .picture {
+      img {
+        border-radius: 500px 0 0 500px;
+      }
+    }
+  }
+}

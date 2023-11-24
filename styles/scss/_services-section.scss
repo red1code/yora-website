@@ -1,0 +1,39 @@
+section#services {
+  background-color: $primary-color;
+
+  .inside-container {
+    h2 {
+      text-align: center;
+      margin-bottom: calc($gap * 2);
+    }
+
+    .carts {
+      display: flex;
+      gap: $gap;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .cart {
+        flex: 1;
+        min-width: 250px;
+        padding: $gap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $gap;
+        background-color: $bg-light;
+        border-radius: 24px;
+        box-shadow: 0 0 2px 0 rgba($color: #000000, $alpha: 0.3);
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .cart:hover {
+        background-color: #fff;
+        transition: 0.25s;
+      }
+    }
+  }
+}

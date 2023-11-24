@@ -9,40 +9,130 @@
   <title>Yora</title>
 </head>
 <body>
+  
   <header>
-    <div class="logo">
-      <a href="/">
-        <img src="./assets/logo-placeholder.svg" alt="Yora logo">
-      </a>
+    <div class="inside-container">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/logo-placeholder.svg" alt="Yora logo">
+        </a>
+      </div>
+      <nav id="desktopMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="toggleMenuBtn" onclick="toggleMobileMenu()">
+        <img src="./assets/align-justify.svg" width="20" 
+            id="toggleMenu" alt="Mobile menu toggle icon">
+      </button>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <div id="mobileMenu" class="hide-mobile-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
   <main>
     <section class="hero" id="hero">
       <div class="inside-container">
-        <h1>YORA</h1>
+        <h1 id="">Yora Pro</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        <button type="button" class="services-CTA-btn" onclick="location.href='#services'">
-          Services
-        </button>
+        <a href="#services" class="services-CTA-btn">Services</a>
       </div>
-    </section>
+    </section> <!-- hero section END -->
     
-    <section class="about" id="about"></section>
+    <section class="about" id="about">
+      <div class="inside-container">
+        <div class="details">
+          <h2>About Yora</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="picture">
+          <img src="./assets/about-photo.webp" alt="About section photo">
+        </div>
+      </div>
+    </section> <!-- about section END -->
 
-    <section class="services" id="services"></section>
+    <section class="services" id="services">
+      <div class="inside-container">
+        <h2 class="title">Our Services</h2>
+        <div class="carts">
+          <div class="cart">
+            <img src="./assets/desktop.svg" alt="">
+            <h3>Service 01</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="cart">
+            <img src="./assets/network-wired.svg" alt="">
+            <h3>Service 02</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="cart">
+            <img src="./assets/camera.svg" alt="">
+            <h3>Service 03</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- services section END -->
 
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <div class="inside-container">
+        <div class="map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.747661984055!2d3.694368610875288!3d32.47944047368013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x126429f1601f3d0f%3A0xca1d050fa0793e!2sYora%20Pro!5e0!3m2!1sen!2sdz!4v1700828442137!5m2!1sen!2sdz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="details">
+          <div class="details-inner">
+            <h2 class="title">Get In Touch</h2>
+            <div class="adresse info">
+              <img src="./assets/location-dot.svg" width="24" alt="">
+              <span>Quartier Ider, Ghardaia, Algeria.</span>
+            </div>
+            <div class="phone info">
+              <img src="./assets/phone.svg" width="24" alt="">
+              <span>+213 556 35 56 94</span>
+            </div>
+            <div class="email info">
+              <img src="./assets/envelope.svg" width="24" alt="">
+              <span>contact@yora.com</span>
+            </div>
+            <div class="follow-us">
+              <h3>Follow us:</h3>
+              <div class="sm-icons">
+                <a href="#">
+                  <img src="./assets/facebook-icon.svg" width="36" alt="Facebook icon">
+                </a>
+                <a href="#">
+                  <img src="./assets/instagram-icon.svg" width="36" alt="Instagram icon">
+                </a>
+                <a href="#">
+                  <img src="./assets/linkedin-icon.svg" width="36" alt="LinkedIn icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- contact section END -->
+
+    <a id="goTop" href="#">&#8593;</a>
   </main>
 
-  <footer></footer>
-
+  <footer>
+    </div>
+    <div class="inside-container">
+      <p class="rights">All rights reserved © <span id="year"></span> <b>Yora-Pro</b></p>
+      <p class="developed-by">Designed & developed by 
+        <a href="https://github.com/red1code" target="_blank">Red1Dev</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

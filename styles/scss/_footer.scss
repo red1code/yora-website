@@ -1,0 +1,26 @@
+footer {
+  background-color: $primary-color;
+  padding: $gap;
+  font-size: 15px;
+
+  .inside-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap;
+    flex-wrap: wrap;
+  }
+
+  .developed-by {
+    font-size: 14.5px;
+
+    a {
+      font-weight: 500;
+
+      &:hover {
+        color: $accent-color;
+        transition: 0.3s;
+      }
+    }
+  }
+}

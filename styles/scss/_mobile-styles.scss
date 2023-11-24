@@ -1,0 +1,64 @@
+@media screen and (max-width: 600px) {
+  #desktopMenu {
+    display: none;
+  }
+
+  #toggleMenuBtn {
+    display: block;
+  }
+
+  section#contact {
+    position: relative;
+
+    .inside-container {
+      flex-direction: column-reverse;
+
+      .details {
+        margin-bottom: 300px;
+        justify-content: start;
+
+        .sm-icon {
+          justify-content: center;
+        }
+      }
+
+      .map {
+        margin: 0;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  footer {
+    .inside-container {
+      justify-content: center;
+      gap: calc($gap / 2);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: calc($gap * 2) $gap;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  section#hero {
+    .inside-container {
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}
