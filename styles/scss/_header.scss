@@ -6,6 +6,8 @@ header {
   padding: calc($gap / 2) $gap;
   background-color: rgba($primary-color, 0.9);
   box-shadow: 0 0 3px 0 $bg-dark;
+  -webkit-box-shadow: 0 0 3px 0 $bg-dark;
+  -moz-box-shadow: 0 0 3px 0 $bg-dark;
   z-index: 100;
 
   .inside-container {
