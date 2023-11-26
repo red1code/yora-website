@@ -14,10 +14,14 @@
       flex-direction: column-reverse;
 
       .details {
+        display: block;
         margin-bottom: 300px;
-        justify-content: start;
 
-        .sm-icon {
+        h2 {
+          text-align: center;
+        }
+
+        .sm-icons {
           justify-content: center;
         }
       }

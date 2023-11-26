@@ -340,10 +340,13 @@ footer .developed-by a:hover {
     flex-direction: column-reverse;
   }
   section#contact .inside-container .details {
+    display: block;
     margin-bottom: 300px;
-    justify-content: start;
   }
-  section#contact .inside-container .details .sm-icon {
+  section#contact .inside-container .details h2 {
+    text-align: center;
+  }
+  section#contact .inside-container .details .sm-icons {
     justify-content: center;
   }
   section#contact .inside-container .map {
