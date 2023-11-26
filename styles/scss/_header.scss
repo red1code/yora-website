@@ -34,8 +34,7 @@ header {
         }
 
         li:hover {
-          color: black;
-          border-bottom: 1px solid $bg-dark;
+          color: $accent-color ;
         }
       }
     }

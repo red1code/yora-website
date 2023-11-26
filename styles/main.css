@@ -136,8 +136,7 @@ header .inside-container nav ul li {
   font-weight: 500;
 }
 header .inside-container nav ul li:hover {
-  color: black;
-  border-bottom: 1px solid #21252B;
+  color: #808000;
 }
 header .inside-container button {
   padding: 0;
