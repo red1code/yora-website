@@ -128,15 +128,41 @@ header .inside-container .logo {
 header .inside-container .logo img {
   width: 100%;
 }
+header .inside-container nav {
+  flex: 1;
+  margin: 0 24px;
+}
 header .inside-container nav ul {
   display: flex;
   gap: 24px;
+}
+header .inside-container nav ul.ltr {
+  float: right;
+}
+header .inside-container nav ul.rtl {
+  float: left;
 }
 header .inside-container nav ul li {
   font-weight: 500;
 }
 header .inside-container nav ul li:hover {
   color: #808000;
+}
+header .inside-container select#lang {
+  outline: none;
+  padding: 8px;
+  color: #252733;
+  background-color: #F6F6FB;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0 #21252B;
+  -webkit-box-shadow: 0 0 2px 0 #21252B;
+  -moz-box-shadow: 0 0 2px 0 #21252B;
+}
+header .inside-container select#lang:hover {
+  filter: brightness(0.9);
 }
 header .inside-container button {
   padding: 0;
@@ -219,10 +245,18 @@ section#about .inside-container > div {
 section#about .inside-container h2 {
   margin-bottom: 24px;
 }
-section#about .inside-container .picture img {
+section#about .inside-container .picture img.ltr {
   border-radius: 500px 0 0 500px;
 }
+section#about .inside-container .picture img.rtl {
+  border-radius: 0 500px 500px 0;
+}
 
+@media screen and (max-width: 600px) {
+  section#about h2 {
+    text-align: center;
+  }
+}
 section#services {
   background-color: #DAF7A6;
 }

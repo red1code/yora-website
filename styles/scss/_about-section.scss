@@ -16,9 +16,21 @@ section#about {
     }
 
     .picture {
-      img {
+      img.ltr {
         border-radius: 500px 0 0 500px;
       }
+
+      img.rtl {
+        border-radius: 0 500px 500px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#about {
+    h2 {
+      text-align: center;
     }
   }
 }

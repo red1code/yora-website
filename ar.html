@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yora Pro digital agency official website">
+  <link rel="shortcut icon" href="../assets/construction-favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../js/scripts.js" defer></script>
+  <title>يورا برو - وكالة رقمية</title>
+</head>
+<body>
+  
+  <header>
+    <div class="inside-container">
+      <div class="logo">
+        <a href="/yora-website/">
+          <img src="../assets/logo-placeholder.svg" alt="شعار يورا برو">
+        </a>
+      </div>
+      <nav id="desktopMenu">
+        <ul class="rtl">
+          <li><a href="#about">معلومات عنا</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#contact">إتصل بنا</a></li>
+        </ul>
+      </nav>
+      <select name="lang" id="lang" onchange="changeLanguage(event)">
+        <option value="fr">Français</option>
+        <option selected value="ar">العربية</option>
+      </select>
+      <button type="button" id="toggleMenuBtn" onclick="toggleMobileMenu()">
+        <img src="../assets/align-justify.svg" width="20" 
+            id="toggleMenu" alt="إيقونة إظهار القائمة">
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobileMenu" class="hide-mobile-menu">
+    <ul>
+      <li><a href="#about">معلومات عنا</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#contact">إتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="inside-container">
+        <h1 id="">يورا برو</h1>
+        <p>لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد</p>
+        <a href="#services" class="services-CTA-btn">اِكتشف خدماتنا</a>
+      </div>
+    </section> <!-- hero section END -->
+    
+    <section class="about" id="about">
+      <div class="inside-container">
+        <div class="details">
+          <h2>حول يورا برو</h2>
+          <p>لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد. لقد كان لوريم إيبسوم هو النص الوهمي القياسي في هذه الصناعة منذ القرن السادس عشر، عندما أخذت طابعة غير معروفة لوح الكتابة وخلطته لصنع نموذج كتاب. لقد صمدت ليس فقط لخمسة قرون، بل قفزت أيضًا إلى التنضيد الإلكتروني، وبقيت دون تغيير بشكل أساسي. انتشر بشكل كبير في ستينيات القرن الماضي مع إصدار أوراق Letraset التي تحتوي على مقاطع لوريم إيبسوم، ومؤخراً مع ظهور برامج النشر المكتبي مثل Aldus PageMaker والتي تضمنت إصدارات لوريم إيبسوم.</p>
+        </div>
+        <div class="picture">
+          <img src="../assets/about-photo.webp" class="rtl" alt="الصورة المرفقة بقسم حول يورا برو">
+        </div>
+      </div>
+    </section> <!-- about section END -->
+
+    <section class="services" id="services">
+      <div class="inside-container">
+        <h2 class="title">خدماتنا</h2>
+        <div class="carts">
+          <div class="cart">
+            <img src="../assets/desktop.svg" alt="الصورة التوضيحية بالخدمة 01">
+            <h3>الخدمة 01</h3>
+            <p>لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد. لقد كان لوريم إيبسوم هو النص الوهمي القياسي في هذه الصناعة منذ القرن السادس عشر، عندما أخذت طابعة غير معروفة لوح الكتابة وخلطته لصنع نموذج كتاب.</p>
+          </div>
+          <div class="cart">
+            <img src="../assets/network-wired.svg" alt="الصورة التوضيحية بالخدمة 02">
+            <h3>الخدمة 02</h3>
+            <p>لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد. لقد كان لوريم إيبسوم هو النص الوهمي القياسي في هذه الصناعة منذ القرن السادس عشر، عندما أخذت طابعة غير معروفة لوح الكتابة وخلطته لصنع نموذج كتاب.</p>
+          </div>
+          <div class="cart">
+            <img src="../assets/camera.svg" alt="الصورة التوضيحية بالخدمة 03">
+            <h3>الخدمة 03</h3>
+            <p>لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد. لقد كان لوريم إيبسوم هو النص الوهمي القياسي في هذه الصناعة منذ القرن السادس عشر، عندما أخذت طابعة غير معروفة لوح الكتابة وخلطته لصنع نموذج كتاب.</p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- services section END -->
+
+    <section class="contact" id="contact">
+      <div class="inside-container">
+        <div class="map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.747661984055!2d3.694368610875288!3d32.47944047368013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x126429f1601f3d0f%3A0xca1d050fa0793e!2sYora%20Pro!5e0!3m2!1sen!2sdz!4v1700828442137!5m2!1sen!2sdz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="details">
+          <div class="details-inner">
+            <h2 class="title">تواصل معنا</h2>
+            <div class="adresse info">
+              <img src="../assets/location-dot.svg" width="24" alt="إيقونة الموقع">
+              <span>حي يدر، ولاية غرداية الجزائر</span>
+            </div>
+            <div class="phone info">
+              <img src="../assets/phone.svg" width="24" alt="إيقونة الهاتف">
+              <span dir="ltr">+213 556 35 56 94</span>
+            </div>
+            <div class="email info">
+              <img src="../assets/envelope.svg" width="24" alt="إيقونة الإيمايل">
+              <span>contact@yora.com</span>
+            </div>
+            <div class="follow-us">
+              <h3>تابعنا:</h3>
+              <div class="sm-icons">
+                <a href="#">
+                  <img src="../assets/facebook-icon.svg" width="36" 
+                      alt="إيقونة الفيسبوك">
+                </a>
+                <a href="#">
+                  <img src="../assets/instagram-icon.svg" width="36" 
+                      alt="إيقونة الإنستجرام">
+                </a>
+                <a href="#">
+                  <img src="../assets/linkedin-icon.svg" width="36" 
+                      alt="إيقونة لينكدين">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- contact section END -->
+  </main>
+
+  <footer>
+    <div class="inside-container">
+      <p class="rights">جميع الحقوق محفوظة © <span id="year"></span> <b>يورا برو</b></p>
+      <p class="developed-by">من تصميم وتطوير 
+        <b><a href="https://github.com/red1code" target="_blank"> Red1Dev</a></b>
+      </p>
+    </div>
+  </footer>
+
+  <a id="goTop" onclick="scrollToTop()" title="إذهب للأعلى">
+    <img src="../assets/go-to-top.svg" width="36" height="100%" alt="إيقونة الذهاب للأعلى">
+  </a>
+
+  <a id="whatsapp" href="https://wa.me/+213556355694" target="_blank" 
+    title="دردش معنا على الواتساب">
+    <img src="../assets/whatsapp-icon.svg" width="36" alt="إيقونة الواتساب">
+  </a>
+</body>
+</html>

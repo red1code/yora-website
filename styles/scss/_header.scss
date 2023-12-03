@@ -25,9 +25,20 @@ header {
     }
 
     nav {
+      flex: 1;
+      margin: 0 $gap;
+
       ul {
         display: flex;
         gap: $gap;
+
+        &.ltr {
+          float: right;
+        }
+
+        &.rtl {
+          float: left;
+        }
 
         li {
           font-weight: 500;
@@ -37,6 +48,24 @@ header {
           color: $accent-color ;
         }
       }
+    }
+
+    select#lang {
+      outline: none;
+      padding: calc($gap / 3);
+      color: $txt-dark;
+      background-color: $bg-light;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 0 2px 0 $bg-dark;
+      -webkit-box-shadow: 0 0 2px 0 $bg-dark;
+      -moz-box-shadow: 0 0 2px 0 $bg-dark;
+    }
+
+    select#lang:hover {
+      filter: brightness(0.9);
     }
 
     button {
