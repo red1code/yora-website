@@ -1,13 +1,13 @@
 year.textContent = new Date().getFullYear();
-goTop.style.display = 'none';
+goTop.style.visibility = 'hidden';
 let showMobileMenu = false;
 
 window.onscroll = (evt) => {
-  if (window.scrollY > window.innerHeight) {
-    goTop.style.display = 'block';
+  if (window.scrollY > (window.innerHeight / 2)) {
+    goTop.style.visibility = 'visible';
   }
   else {
-    goTop.style.display = 'none';
+    goTop.style.visibility = 'hidden';
   }
 }
 

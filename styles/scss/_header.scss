@@ -4,10 +4,11 @@ header {
   position: sticky;
   top: 0;
   padding: calc($gap / 2) $gap;
-  background-color: rgba($primary-color, 0.9);
-  box-shadow: 0 0 3px 0 $bg-dark;
-  -webkit-box-shadow: 0 0 3px 0 $bg-dark;
-  -moz-box-shadow: 0 0 3px 0 $bg-dark;
+  background-color: rgba($accent_color, 0.9);
+  color: $title_light;
+  box-shadow: 0 0 3px 0 #000;
+  -webkit-box-shadow: 0 0 3px 0 #000;
+  -moz-box-shadow: 0 0 3px 0 #000;
   z-index: 100;
 
   .inside-container {
@@ -45,7 +46,8 @@ header {
         }
 
         li:hover {
-          color: $accent-color ;
+          filter: brightness(1.5);
+          transition: 0.3s;
         }
       }
     }

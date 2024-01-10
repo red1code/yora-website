@@ -33,14 +33,18 @@ section {
 
 #goTop {
   position: fixed;
-  bottom: calc($gap * 3);
+  bottom: calc($gap * 2);
   right: $gap;
   z-index: 100;
   cursor: pointer;
-  opacity: 0.85;
-  border-radius: 50%;
-  padding: 0;
-  height: max-content;
+  opacity: 0.75;
+  width: 36px;
+  height: 36px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 
   &:hover {
     opacity: 1;

@@ -13,6 +13,11 @@ section#about {
 
     h2 {
       margin-bottom: $gap;
+      color: $title_dark;
+    }
+
+    p {
+      color: $txt_dark;
     }
 
     .picture {

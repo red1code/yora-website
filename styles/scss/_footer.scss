@@ -1,5 +1,6 @@
 footer {
-  background-color: $primary-color;
+  background-color: $primary_color;
+  color: #000;
   padding: $gap;
   font-size: 15px;
 
@@ -18,7 +19,7 @@ footer {
       font-weight: 500;
 
       &:hover {
-        color: $accent-color;
+        color: #fff;
         transition: 0.3s;
       }
     }

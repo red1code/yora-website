@@ -1,6 +1,6 @@
 section#hero {
   min-height: 600px;
-  background: linear-gradient(rgba($bg-dark, 0.75), rgba($bg-dark, 0.75)),
+  background: linear-gradient(rgba($bg_dark, 0.75), rgba($bg_dark, 0.75)),
     url(../assets/hero-background.webp);
   background-size: cover;
   background-position: center;
@@ -12,15 +12,16 @@ section#hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $txt-light-1;
     text-align: center;
 
     h1 {
       font-size: 75px;
+      color: $title_light;
     }
 
     p {
       font-size: 20px;
+      color: $txt_light;
       margin-bottom: $gap;
     }
 
@@ -28,18 +29,31 @@ section#hero {
       display: block;
       width: max-content;
       padding: calc($gap / 2) $gap;
-      background-color: $primary-color;
-      color: $txt-dark;
+      border: 3px solid $primary_color;
       border-radius: 50px;
       font-size: 16px;
       font-weight: 600;
-      box-shadow: 0px 0px 5px 5px rgba($primary-color, 0.1);
-      -webkit-box-shadow: 0px 0px 5px 5px rgba($primary-color, 0.1);
-      -moz-box-shadow: 0px 0px 5px 5px rgba($primary-color, 0.1);
+      color: $txt_light;
+      background: linear-gradient(to right, $primary_color 50%, rgba($primary_color, 0) 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
 
       &:hover {
-        background-color: #fff;
-        transition: 0.3s;
+        color: #000000;
+        background-position: left bottom;
+      }
+    }
+
+    a.services-CTA-btn.rtl {
+      background: linear-gradient(to left, $primary_color 50%, rgba($primary_color, 0) 50%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        color: #000000;
+        background-position: right bottom;
       }
     }
   }

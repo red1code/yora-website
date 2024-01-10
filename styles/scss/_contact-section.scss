@@ -4,6 +4,7 @@ section#contact {
     justify-content: center;
     gap: $gap;
     flex-wrap: wrap;
+    color: $txt-dark;
 
     &>div {
       flex: 1;
@@ -26,6 +27,7 @@ section#contact {
 
       h2 {
         margin-bottom: calc($gap / 2);
+        color: $title_dark;
       }
 
       .info {
@@ -36,7 +38,6 @@ section#contact {
         span {
           font-size: 18px;
           font-weight: 500;
-          color: $accent-color;
         }
       }
 
@@ -45,12 +46,20 @@ section#contact {
 
         h3 {
           margin-bottom: $gap;
+          color: $title_dark;
         }
 
         .sm-icons {
           display: flex;
           align-items: center;
           gap: $gap;
+
+          &>a {
+            &:hover {
+              filter: brightness(0.75);
+              transition: 0.3s;
+            }
+          }
         }
       }
     }
