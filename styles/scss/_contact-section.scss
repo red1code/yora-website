@@ -34,10 +34,19 @@ section#contact {
         display: flex;
         align-items: center;
         gap: calc($gap / 2);
+        flex-wrap: wrap;
 
         span {
           font-size: 18px;
           font-weight: 500;
+        }
+      }
+
+      .phone,
+      .email {
+        span {
+          white-space: nowrap;
+          ;
         }
       }
 

@@ -96,7 +96,7 @@ section {
 
 #whatsapp {
   position: fixed;
-  bottom: 72px;
+  bottom: 48px;
   left: 24px;
   z-index: 100;
 }
@@ -355,10 +355,15 @@ section#contact .inside-container .details .info {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 section#contact .inside-container .details .info span {
   font-size: 18px;
   font-weight: 500;
+}
+section#contact .inside-container .details .phone span,
+section#contact .inside-container .details .email span {
+  white-space: nowrap;
 }
 section#contact .inside-container .details .follow-us {
   margin-top: 24px;
